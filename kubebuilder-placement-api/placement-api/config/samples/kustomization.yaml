@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- multicluster_v1alpha1_placementdecision.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples

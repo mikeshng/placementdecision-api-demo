@@ -1,0 +1,14 @@
+apiVersion: multicluster.x-k8s.io/v1alpha1
+kind: PlacementDecision
+metadata:
+  labels:
+    multicluster.x-k8s.io/placement: app-placement
+  name: app-placement-decision-1
+  namespace: argocd
+
+# The status field will not be applied when using kubectl.
+# Refer to the README for instructions on how to write, update, or remove the status field.
+status:
+  decisions:
+  - clusterName: cluster1
+    reason: ""
